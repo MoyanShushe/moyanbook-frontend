@@ -1,0 +1,55 @@
+// app global css in SCSS form
+body.body--dark,
+body.body--light {
+  background-color: var(--m-sur);
+  color: var(--m-on-sur);
+  --q-primary: var(--m-pri);
+  --q-secondary: var(--m-sec);
+  --q-accent: var(--m-ter);
+  --q-dark: var(--m-sur-c);
+  --q-dark-page: var(--m-sur);
+  --q-negative: var(--m-err);
+
+  .q-btn.bg-primary {
+    color: var(--m-on-pri) !important;
+  }
+
+  .q-item__label--header {
+    color: var(--m-sec);
+  }
+
+  .q-item__label--caption {
+    color: var(--m-on-sur-var);
+  }
+
+  .q-field--filled .q-field__control {
+    background-color: var(--m-sur-c);
+  }
+
+  .q-notification.bg-negative {
+    color: var(--m-on-err) !important;
+  }
+
+  .q-chip,
+  .q-menu,
+  .q-tab-panels {
+    background-color: var(--m-sur-c);
+    color: var(--m-on-sur);
+  }
+
+  .q-card {
+    background-color: var(--m-sur-c);
+  }
+}
+
+.q-field--dark:not(.q-field--highlighted) .q-field__label,
+.q-field--dark .q-field__marginal,
+.q-field--dark .q-field__bottom {
+  color: var(--m-on-sur-var);
+}
+
+a {
+  color: inherit;
+}
+
+
