@@ -44,6 +44,7 @@
               unelevated
               :label="verifyState.waitTime ? verifyState.waitTime + 's' : '获取验证码'"
               :disable="!!verifyState.waitTime"
+              :loading="verifyState.loading"
               @click="verify"
             />
           </div>
@@ -95,7 +96,7 @@ const verifyState = reactive({
   waitTime: 0
 })
 function verify() {
-  if (!/^\w+(-+.\w+)*@\w+(-.\w+)*.\w+(-.\w+)*$/i.test(email.value)) {
+  if (!/^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/.test(email.value)) {
     $q.notify({
       type: 'negative',
       message: '请输入正确的邮箱地址'

@@ -9,6 +9,9 @@
           界面
         </q-item-label>
         <q-item>
+          <q-item-section avatar>
+            <q-icon name="sym_o_dark_mode" />
+          </q-item-section>
           <q-item-section>外观</q-item-section>
           <q-item-section side>
             <q-select
@@ -26,6 +29,9 @@
           v-ripple
           @click="pickThemeHue"
         >
+          <q-item-section avatar>
+            <q-icon name="sym_o_palette" />
+          </q-item-section>
           <q-item-section>主题色</q-item-section>
           <q-item-section side>
             <hct-preview-circle

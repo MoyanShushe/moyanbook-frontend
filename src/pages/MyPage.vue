@@ -12,7 +12,7 @@
       max-w-screen-md
       m-auto
     >
-      <q-list mt-2>
+      <q-list pt-2>
         <user-item />
         <q-separator spaced />
         <q-item
